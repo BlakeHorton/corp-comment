@@ -26,11 +26,63 @@
     <link rel="stylesheet" href="style.css" />
 
     <script src="script.js" defer></script>
+    <script src="stephen.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <title>CorpComment -- Give Feedback, Publicly</title>
   </head>
 
   <body class="body">
+    <!-- Stephen's stuff START -->
+    <div
+      class="fixed bottom-5 right-5 -translate-x-1/2 -translate-y-1/2 z-[1000] flex items-center justify-center"
+    >
+      <button
+        id="show-dialog"
+        class="group rounded-full h-10 w-10 bg-green-500 text-white shadow flex items-center justify-center active:bg-green-400 transition active:scale-95 active:shadow-none hover:bg-green-500"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="3"
+          stroke="currentColor"
+          class="w-6 h-6 group-active:scale-[1.2] transition"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 4.5v15m7.5-7.5h-15"
+          />
+        </svg>
+      </button>
+    </div>
+    <dialog
+      id="dialog"
+      class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-5 border rounded-md shadow"
+    >
+      <header class="font-bold text-2xl p-5 border-b">Ayo wtf</header>
+      <div class="p-5">
+        <iframe
+          width="1227"
+          height="690"
+          src="https://www.youtube.com/embed/ag1frmlUuf8"
+          title="Huh Cat Meme Sound Variations in 60 seconds"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="flex items-center justify-end">
+        <button
+          id="close-dialog"
+          class="text-white bg-green-500 px-3 py-2 font-medium rounded-md"
+        >
+          Close
+        </button>
+      </div>
+    </dialog>
+    <!-- Stephen's stuff END -->
     <div class="body__container">
       <footer class="footer">
         <small class="copyright">
